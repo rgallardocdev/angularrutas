@@ -1,0 +1,17 @@
+<div>
+    <form miFormulario="ngForm">
+        <br>
+        <label>rango inicial: </label><input type="number" name="rangoInicial" #rangoInicial>
+        <br><br>
+        <label>rango final:</label><input type="number" name="rangoFinal" #rangoFinal>
+        <br><br>
+        <button (click)="mostrarPares(rangoFinal.value)">Mostrar Pares</button>
+        <br><br>
+        <ul>
+            @for (numero of arrayNumeros; track numero) {
+                <li>{{numero}}</li>
+            }
+        </ul>
+    </form>
+
+</div>
