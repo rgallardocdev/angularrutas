@@ -1,0 +1,12 @@
+<div>
+    <form miFormulario="ngForm">
+        <br>
+        <label>Numero: </label><input type="number" name="numero" #numero/>&nbsp;
+        <button (click)="mostrarTabla()">Mostrar Tabla</button>
+        <br><br>
+        @for (numero of resultado; track numero){
+            <li>{{numero}}</li>
+        }
+    </form>
+</div>
+
